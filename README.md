@@ -1,7 +1,7 @@
 # Veranda
 A mobile app made with Ionic and Django REST framework that allows you to create and edit notes. Inspired by google keep.
 
-# Instructions
+## Instructions
 Install dependencies using ```npm install```
 
 Run Django Server with ```python manage.py runserver``` inside the server directory
