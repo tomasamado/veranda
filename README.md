@@ -1,7 +1,7 @@
 # Veranda
 A mobile app made with Ionic and Django REST framework that allows you to create and edit notes. Inspired by google keep.
 
-![Sample Pic](https://github.com/tomasamado/veranda/tree/LoginFix/sample%20images/Capture.png)
+![Sample Pic](https://github.com/tomasamado/veranda/blob/LoginFix/sample%20images/Capture.PNG)
 
 ## Instructions
 Install dependencies using ```npm install```
