@@ -30,7 +30,6 @@ export class ViewNotePage {
   }
   
   ionViewDidLoad() {
-    console.log(this.note.id);
   }
 
   changeColour(colour) {
@@ -41,17 +40,13 @@ export class ViewNotePage {
     this.restProvider.deleteNote(this.note.id)
       .then(data => {
         this.notes = data;
-        console.log(this.notes);
       });
     this.navCtrl.pop();
   }
 
   updateNote() {
-    console.log(this.note);
     this.restProvider.updateNote(this.note).then((result) => {
-      console.log(result);
     }, (err) => {
-      console.log(err);
     });
     this.navCtrl.pop();
   }

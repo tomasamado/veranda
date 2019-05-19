@@ -33,9 +33,7 @@ export class RegisterPage {
                 buttons: ['OK']
             })).present();
         } else {
-            console.log(this.user);
             this.restProvider.addUser(this.user).then((result) => {
-                console.log(result);
                 this.navCtrl.push(LoginPage)
             }, (err) => {
                 let alert = this.alertCtrl.create({

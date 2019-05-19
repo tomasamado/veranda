@@ -5,7 +5,6 @@ import { MyApp } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { Camera } from '@ionic-native/camera';
 import { PhotoLibrary } from '@ionic-native/photo-library';
-import { CanvasDrawComponent } from '../components/canvas-draw/canvas-draw';
 import { HomePage } from '../pages/home/home';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -15,7 +14,6 @@ import { CreatePage } from '../pages/create/create';
 import { ViewNotePage } from '../pages/view-note/view-note'
 import { RestProvider } from '../providers/rest/rest';
 import { StorageProvider } from '../providers/storage/storage';
-import { CanvasPage } from '../pages/canvas/canvas';
 import { IonicStorageModule } from '@ionic/storage';
 import { SpeechRecognition } from '@ionic-native/speech-recognition';
 import { NativeStorage } from '@ionic-native/native-storage';
@@ -29,9 +27,7 @@ import { NativeStorage } from '@ionic-native/native-storage';
     HomePage,
     LoginPage,
     RegisterPage,
-    ViewNotePage,
-    CanvasDrawComponent,
-    CanvasPage
+    ViewNotePage
   ],
   imports: [
     BrowserModule,
@@ -46,9 +42,7 @@ import { NativeStorage } from '@ionic-native/native-storage';
     HomePage,
     LoginPage,
     RegisterPage,
-    ViewNotePage,
-    CanvasPage,
-    CanvasDrawComponent
+    ViewNotePage
   ],
   providers: [
     StatusBar,

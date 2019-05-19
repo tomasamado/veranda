@@ -7,7 +7,6 @@ import { Storage } from '@ionic/storage';
 export class StorageProvider {
 
     constructor(private nativeStorage: NativeStorage, private storage: Storage) {
-        console.log('Hello RestProvider Provider');
     }
 
 

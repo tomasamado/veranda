@@ -20,7 +20,7 @@ const httpOptions = {
 @Injectable()
 export class RestProvider {
   token: any;
-  apiUrl = 'http://192.168.1.7:8100/';
+  apiUrl = 'http://127.0.0.1:8100/';
   tokenHeader = {};
 
   constructor(public http: HttpClient, private alertCtrl: AlertController, public nativeStorage: NativeStorage, public storageProvider: StorageProvider, public plt: Platform, private storage: Storage) {
@@ -34,7 +34,6 @@ export class RestProvider {
           'Authorization': 'Bearer ' + result
         })
       };
-      console.log (this.tokenHeader);
     });
   }
 

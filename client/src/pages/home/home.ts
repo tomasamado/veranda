@@ -73,7 +73,6 @@ export class HomePage {
     this.restProvider.getNotes()
       .then(data => {
         this.notes = data;
-        console.log(this.items);
       });
   }
 
@@ -81,7 +80,6 @@ export class HomePage {
     this.restProvider.getSingularUser(this.userId)
       .then(data => {
         this.user = data;
-        console.log(this.user);
       });
   }
 
